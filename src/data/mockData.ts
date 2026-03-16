@@ -107,7 +107,7 @@ export const providers: Provider[] = [
     name: "Glamour Touch",
     category: "Makeup Artists",
     categoryId: "3",
-    image: "/src/assets/provider-makeup.jpg",
+    image: makeupImg,
     rating: 4.9,
     reviewCount: 112,
     price: "From $250",
