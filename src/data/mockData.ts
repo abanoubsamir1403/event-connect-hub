@@ -51,7 +51,7 @@ export const providers: Provider[] = [
     name: "Luminous Studios",
     category: "Photographers",
     categoryId: "2",
-    image: "/src/assets/provider-photographer.jpg",
+    image: photographerImg,
     rating: 4.9,
     reviewCount: 127,
     price: "From $1,200",
