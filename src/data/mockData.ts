@@ -3,8 +3,7 @@ import cateringImg from "@/assets/provider-catering.jpg";
 import decorImg from "@/assets/provider-decor.jpg";
 import djImg from "@/assets/provider-dj.jpg";
 import makeupImg from "@/assets/provider-makeup.jpg";
-
-
+export interface Category {
   id: string;
   name: string;
   icon: string;
