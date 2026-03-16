@@ -1,4 +1,10 @@
-export interface Category {
+import photographerImg from "@/assets/provider-photographer.jpg";
+import cateringImg from "@/assets/provider-catering.jpg";
+import decorImg from "@/assets/provider-decor.jpg";
+import djImg from "@/assets/provider-dj.jpg";
+import makeupImg from "@/assets/provider-makeup.jpg";
+
+
   id: string;
   name: string;
   icon: string;
