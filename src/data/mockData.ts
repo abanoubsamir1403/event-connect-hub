@@ -93,7 +93,7 @@ export const providers: Provider[] = [
     name: "DJ Rhythm",
     category: "DJs & Music",
     categoryId: "5",
-    image: "/src/assets/provider-dj.jpg",
+    image: djImg,
     rating: 4.6,
     reviewCount: 53,
     price: "From $600",
