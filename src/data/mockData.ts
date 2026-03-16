@@ -79,7 +79,7 @@ export const providers: Provider[] = [
     name: "Enchanted Events Décor",
     category: "Decoration",
     categoryId: "6",
-    image: "/src/assets/provider-decor.jpg",
+    image: decorImg,
     rating: 4.7,
     reviewCount: 64,
     price: "From $800",
