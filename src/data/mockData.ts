@@ -65,7 +65,7 @@ export const providers: Provider[] = [
     name: "Golden Plate Catering",
     category: "Catering",
     categoryId: "7",
-    image: "/src/assets/provider-catering.jpg",
+    image: cateringImg,
     rating: 4.8,
     reviewCount: 89,
     price: "From $45/person",
