@@ -1,8 +1,11 @@
 import { categories } from "@/data/mockData";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { TranslationKey } from "@/i18n/translations";
 
 const CategoryChips = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide" style={{ scrollbarWidth: "none" }}>
@@ -13,7 +16,9 @@ const CategoryChips = () => {
           className="flex flex-shrink-0 flex-col items-center gap-1.5 rounded-2xl bg-muted/60 px-4 py-3 transition-all hover:bg-primary/10 hover:shadow-card active:scale-95"
         >
           <span className="text-2xl">{cat.icon}</span>
-          <span className="whitespace-nowrap text-xs font-medium text-foreground">{cat.name}</span>
+          <span className="whitespace-nowrap text-xs font-medium text-foreground">
+            {t(`cat_${cat.id}` as TranslationKey)}
+          </span>
         </button>
       ))}
     </div>

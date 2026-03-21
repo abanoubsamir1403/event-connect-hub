@@ -2,6 +2,7 @@ import { Star, MapPin } from "lucide-react";
 import { Provider } from "@/data/mockData";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 interface ProviderCardProps {
   provider: Provider;
@@ -10,6 +11,7 @@ interface ProviderCardProps {
 
 const ProviderCard = ({ provider, index = 0 }: ProviderCardProps) => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <motion.div
@@ -26,8 +28,8 @@ const ProviderCard = ({ provider, index = 0 }: ProviderCardProps) => {
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {provider.featured && (
-          <span className="absolute left-3 top-3 rounded-full bg-secondary px-3 py-1 text-[10px] font-semibold text-secondary-foreground">
-            Featured
+          <span className="absolute start-3 top-3 rounded-full bg-secondary px-3 py-1 text-[10px] font-semibold text-secondary-foreground">
+            {t("featured")}
           </span>
         )}
       </div>
